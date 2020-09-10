@@ -20,6 +20,17 @@
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="AppData\sample folder %280%29\sample sub folder %281%29\" />
+    <Folder Include="AppData\sample folder %280%29\sample sub folder %282%29\" />
+    <Folder Include="AppData\sample folder %280%29\sample sub folder %283%29\" />
+    <Folder Include="AppData\sample folder %280%29\sample sub folder %284%29\" />
+    <Folder Include="AppData\sample folder %281%29\" />
+    <Folder Include="AppData\sample folder %282%29\" />
+    <Folder Include="AppData\sample folder %283%29\" />
+    <Folder Include="AppData\sample folder %284%29\" />
+  </ItemGroup>
+
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
